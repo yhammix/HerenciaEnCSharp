@@ -12,6 +12,15 @@ namespace Herencia
         private string puesto;
         private double salario;
 
+        public CEmpleado(string pNombre, int pEdad, string pPuesto, double pSalario) 
+            : base(pNombre, pEdad) //d los 4 parametros q recibe el constructor estos son los q corresponden a la clase persona a su constructor
+        {
+            Console.WriteLine("Constructor clase hija");
+            puesto = pPuesto;
+            salario = pSalario;
+
+        }
+
         //Propiedades
         public string Puesto
         {

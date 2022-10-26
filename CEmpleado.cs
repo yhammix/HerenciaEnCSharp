@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Herencia
 {
-    class CEmpleado:CPersona
+    sealed class CEmpleado:CPersona
     {
         //Atributos
         private string puesto;
@@ -38,8 +38,11 @@ namespace Herencia
 
         public void ponerDatos(string paramNombre, int paramEdad, string paramPuesto, double paramSalario) 
         {
-            Nombre = paramNombre; //propiedad de la base
-            Edad = paramEdad; //propiedad de la base
+            //Nombre = paramNombre; //propiedad de la base
+            //Edad = paramEdad; //propiedad de la base
+
+            nombre = paramNombre;
+            edad = paramEdad;
 
             puesto = paramPuesto;
             salario = paramSalario;

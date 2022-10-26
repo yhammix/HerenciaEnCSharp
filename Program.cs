@@ -19,6 +19,7 @@ namespace Herencia
             CPersona uno = new CPersona("Maria", 27);
 
             uno.Muestra();
+
             
             Console.WriteLine("************************");
 
@@ -48,7 +49,7 @@ namespace Herencia
             CEmpleado tres = new CEmpleado("Susana", 25, "Programadora", 150000.30);
             tres.EmpleadoMuestra();
             Console.WriteLine("----------------------------------");
-            tres.ponerDatos("Susana", 23, "Programadora Senior", 180000.70);
+            tres.ponerDatos("Susana", 13, "Programadora Senior", 180000.70);
             tres.EmpleadoMuestra();
 
             Console.ReadKey();

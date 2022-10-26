@@ -18,8 +18,8 @@ namespace Herencia
         }
 
 
-        private string nombre;
-        private int edad;
+        protected string nombre;
+        protected int edad;
 
         //Propiedad Nombre
         public string Nombre
